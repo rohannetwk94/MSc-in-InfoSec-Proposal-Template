@@ -1,0 +1,151 @@
+\documentclass{article} % You can ignore
+\usepackage{graphicx} % You can ignore
+\usepackage[dvipsnames]{xcolor} % You can ignore
+\usepackage{amsmath} % You can ignore
+\usepackage{hyperref} % You can ignore
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% toggle the comments character (%) for the below two lines to show or hide hints
+
+%\newcommand{\hint}[1]{}
+\newcommand{\hint}[1] {\par {\bfseries \color{Blue} \it #1 \par}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{\emph{Insert project title here}}  % Change
+\author{\emph{Insert student name here}} % Change
+\date{\today}
+
+\begin{document}
+\maketitle
+\hint{Please note that this component of your project is 10\% of the module (a 30 credit module) and is equivalent to 60\% of a 5 credit module, so this should take considerable effort on your behalf.}
+% INSERT YOUR TEXT HERE
+Some sample text ...
+
+\section{Proposal}
+\hint{Copy the text from the proposal you have submitted to the relevant sections. You may be discussing with your supervisor updates on these sections also. Note there are tips and examples in the last section of this document for inserting bullet points, figures, etc in \TeX\ documents}
+
+% INSERT YOUR TEXT HERE
+Some sample text ...
+
+\subsection{Research area}
+\hint{This paragraph should specify the core focus of your project in 50 to 100 words. This paragraph should provide context to the reviewer and make it clear what area of security you are working in e.g. system firmware and UEFI specification}
+
+% INSERT YOUR TEXT HERE
+Some sample text ...
+
+\subsection{Goals}
+\hint{This paragraph should specify the main goal(s) of your research in under 200 words. The reviewer should have a clear understanding of broadly where your intended technical contribution will lie after reading this.}
+
+% INSERT YOUR TEXT HERE
+Some sample text ...
+
+\subsection{Research Questions}
+\hint{There should be at least two or three research questions in the proposal and no more than 5. These research questions need to be well formed and answerable in a quantitative manner. These questions should concisely stated and should be able to be posed in under 15 words each.}
+
+% INSERT YOUR TEXT HERE
+Some sample text ...
+
+\subsection{Deliverables}
+\hint{Your deliverables should map to your research questions. There should be more deliverables than research questions but no more than 10. These deliverables should concisely stated and should be able to be posed in under 25 words each.}
+
+% INSERT YOUR TEXT HERE
+Some sample text ...
+
+\newpage
+\section{Project Plan}
+\hint{This section should detail a schedule for the remaining time, so as to describe how do you envision to achieve the implementation of your project within the timeframe. This plan SHOULD be ambitious but MUST be realistic and SHOULD be informed either by early prototyping or existing knowledge (e.g. from similar past work you have conducted) and MUST be discussed with your supervisor in detail.
+As part of this plan you should identify any potential risk precluding you from successfully completing your project. This thought exercise is really important and often neglected by students resulting in fatal risks occurring in some projects. Make sure to give this activity the time it requires. Classify any risks with a reasonably likelihood of occurrence according to their impact and possibility of arising. You should include a mitigation approach for any critical risks identified.
+}
+
+% INSERT YOUR TEXT HERE
+Some sample text ...
+
+\section{Evaluation Methodology}
+\hint{In this section you should detail an evaluation plan that allows you to measure how much have you actually achieved the goals of your project. i.e. How do you plan to measure the output of your project? 
+A binary it works/does not work is insufficient to evaluate the success/failure of your work. You need to be able to quantify the success. Be mindful that you may develop a project that may meet all your planned goals but not solve the overall problem the project is trying to address. This is likely to occur if you have failed to revisit these goals and update them with new information which you learn as you are developing the project after consultation with your supervisor.
+}
+% INSERT YOUR TEXT HERE
+Some sample text ...
+
+\section{Literature Review}
+\hint{
+{\color{red}This section comprises a short literature review of around 5 text pages (2500 words). Note this is not expected to be the complete literature review that will be in the final project document.}
+
+The aim here is that you find the trends in your topic and in the area in which your topic resides. Your project goals will be influenced by these trends and this activity should aid you in  developing your initial project research questions further. You should gain insight from reading the literature into how others have solved/approached similar problems to that you wish to address. 
+
+Think of this section as colouring in your initial idea. Before you approach this section you should read at least 3 good literature reviews of your area (e.g. firmware security) to give you context for your project. How do you find these? GOTO Google Scholar and search for your area +" literature review", refine the results to the past 3 years (security moves fast) and pick the top 3 cited papers. Run any you find by your supervisor before reading as they will have read many of these across different fields and will be able to identify a good review quickly. 
+
+In this section, you must find and analyze 3-5 relevant works.  You must describe these works in as much technical depth as possible. In order to find the relevant works you may need to skim 30-50 related works to filter out those that are very closely tied to your project. Reading these quickly is a skill that you may not already have, if so the following may be helpful: \url{https://www.eecs.harvard.edu/~michaelm/postscripts/ReadPaper.pdf}
+}
+ 
+
+% INSERT YOUR TEXT HERE
+Some sample text ...
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hint{\color{Maroon}
+\newpage 
+\section{Latex Tips}
+\subsection{Figures}
+You can include figures easily with the following lines of code, please note that the figure must be present in the figs folder. 
+
+\begin{figure}[ht!]
+  \includegraphics[width=\linewidth]{figs/CITCREST.jpg}
+  \caption{\emph{Insert a description of the figure, e.g. CIT logo.}}
+  \label{fig:cfair}
+\end{figure}
+
+\subsection{Undordered Lists}
+\begin{itemize}
+\item \TeX\ is a typesetting language and not a word processor
+\item \TeX\ is a program and and not an application
+\item Theres is no meaning in comparing \TeX\ to a word processor, since the design
+purposes are different
+\begin{itemize}
+\item \TeX\ is a typesetting language and not a word processor
+\item \TeX\ is a program and and not an application
+\item Theres is no meaning in comparing \TeX\ to a word processor, since the design
+purposes are different
+\begin{itemize}
+\item \TeX\ is a typesetting language and not a word processor
+\item \TeX\ is a program and and not an application
+\item Theres is no meaning in comparing \TeX\ to a word processor, since the design
+purposes are different
+\begin{itemize}
+\item \TeX\ is a typesetting language and not a word processor
+\item \TeX\ is a program and and not an application
+\item Theres is no meaning in comparing \TeX\ to a word processor, since the design
+purposes are different
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\subsection{Ordered Lists}
+\begin{enumerate} 
+\item The labels consists of sequential numbers. 
+\item The numbers starts at 1 with every call to the enumerate environment. 
+\begin{enumerate} 
+\item The labels consists of sequential numbers. 
+\item The numbers starts at 1 with every call to the enumerate environment. 
+\begin{enumerate} 
+\item The labels consists of sequential numbers. 
+\item The numbers starts at 1 with every call to the enumerate environment. 
+\begin{enumerate} 
+\item The labels consists of sequential numbers. 
+\item The numbers starts at 1 with every call to the enumerate environment. 
+\end{enumerate} 
+\end{enumerate} 
+\end{enumerate} 
+\end{enumerate} 
+
+\begin{enumerate}
+\item The labels consists of sequential numbers. 
+\begin{itemize} 
+\item The individual entries are indicated with a black dot, a so-called bullet. 
+\item The text in the entries may be of any length. 
+\end{itemize} 
+\end{enumerate} 
+}
+
+\end{document}
